@@ -4,23 +4,23 @@ public class JunitTesting
     public static void main(String[] args) {
         int num1 = 5, num2 = 15;
         String s1 = "Aman", s2 = "Singh";
-        Sum(num1, num2);
-        Concat(s1, s2);
+        System.out.println(Sum(num1, num2));
+        System.out.println(Concat(s1, s2));
     }
 
     //add 2 numbers
-    public static void Sum(int x, int y)
+    public static int Sum(int x, int y)
     {
         int s;
         s=x+y;
-        System.out.println(s);
+        return(s);
     }
 
     //concat 2 strings
-    public static void Concat(String x, String y)
+    public static String Concat(String x, String y)
     {
         String s;
         s = x+y;
-        System.out.println(s);
+        return(s);
     }
 }
